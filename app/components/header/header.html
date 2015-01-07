@@ -1,0 +1,8 @@
+<div class="header" ng-controller="HeaderCtrl">
+  <ul class="nav nav-pills pull-right">
+    <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
+    <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
+    <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">webapp</h3>
+</div>

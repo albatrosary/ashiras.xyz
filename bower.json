@@ -1,0 +1,10 @@
+{
+  "name": "webapp",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "modernizr": "~2.8.2",
+    "angular": "~1.3.8",
+    "angular-ui-router": "~0.2.13"
+  }
+}
