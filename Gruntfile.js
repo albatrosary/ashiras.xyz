@@ -333,7 +333,8 @@ module.exports = function (grunt) {
             '{,*/}*.html',
             'components/{,*/}*.html',
             'scripts/{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'CNAME'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
