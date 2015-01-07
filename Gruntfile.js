@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 
     'gh-pages': {
       options: {
-        base: 'dist/public',
+        base: 'dist',
         repo: 'https://github.com/albatrosary/ashiras.xyz.git'
       },
       src: ['**']
@@ -445,7 +445,7 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
-  grunt.registerTask('gh-pages', [
+  grunt.registerTask('deploy', [
     'clean:dist',
     'wiredep',
     'useminPrepare',
