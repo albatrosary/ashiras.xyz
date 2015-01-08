@@ -12,13 +12,19 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link async rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <style>
     body {
       padding-top: 20px;
       padding-bottom: 20px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #333333;
+      background-color: #fff;
     }
     .browsehappy {
       margin: 0.2em 0;
@@ -90,7 +96,62 @@
         margin-top: 30px;
       }
     }
+    .jumbotron {
+      padding: 0px;
+      margin-bottom: 0px;
+      color: inherit;
+      background-color: #000000; }
+      .jumbotron h1,
+      .jumbotron .h1 {
+        color: inherit; }
+      .jumbotron p {
+        margin-bottom: 15px;
+        font-size: 21px;
+        font-weight: 200; }
+      .jumbotron > hr {
+        border-top-color: #d5d5d5; }
+      .container .jumbotron {
+        border-radius: 6px; }
+      .jumbotron .container {
+        max-width: 100%; }
+      @media screen and (min-width: 768px) {
+        .jumbotron {
+          padding-top: 0px;
+          padding-bottom: 0px; }
+          .container .jumbotron {
+            padding-left: 60px;
+            padding-right: 60px; }
+          .jumbotron h1,
+          .jumbotron .h1 {
+            font-size: 63px; } }
 
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+      color: #fff;
+      background-color: #428bca;
+    }
+    .nav-pills > li > a {
+      border-radius: 4px;
+    }
+    .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+    }
+    .nav {
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    a {
+      background: transparent;
+    }
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+    * {
+      box-sizing: border-box;
+    }
     </style>
   </head>
   <body ng-app="webapp">
@@ -104,15 +165,16 @@
           <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
           <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
         </ul>
-        <h3 class="text-muted">webapp</h3>
+        <h3 class="text-muted">Ashiras</h3>
       </div>
     </div>
 
     <div ui-view="">
       <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+        <picture>
+          <source srcset="images/main.png" type="image/png">
+          <img src="image/main.png" alt="html5jの活動 html5jはWebクリエイター・エンジニアの皆さんに対し、「つながる」「学べる」「盛り上がる」を合言葉とし、以下の活動を行なっています。">
+        </picture>
       </div>
 
       <div class="container">
@@ -182,5 +244,5 @@
         <script src="scripts/contact/contact.controller.js"></script>
         <script src="scripts/contact/contact.js"></script>
         <!-- endbuild -->
-</body>
+  </body>
 </html>
