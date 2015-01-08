@@ -242,7 +242,12 @@ module.exports = function (grunt) {
           '<%= config.dist %>',
           '<%= config.dist %>/images',
           '<%= config.dist %>/styles'
-        ]
+        ],
+        blockReplacements: {
+          js: function (block){
+            return '<script async defer src="' + block.dest + '"><\/script>';
+          }
+        }
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
       css: ['<%= config.dist %>/styles/{,*/}*.css']
@@ -283,7 +288,8 @@ module.exports = function (grunt) {
           removeOptionalTags: true,
           removeRedundantAttributes: true,
           useShortDoctype: true,
-          minifyCSS: true
+          minifyCSS: true,
+          minifyJS: true
         },
         files: [{
           expand: true,
