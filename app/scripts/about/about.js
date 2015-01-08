@@ -5,7 +5,7 @@ angular.module('webapp')
   function ($stateProvider) {
     $stateProvider
       .state('about', {
-        url: '/about',
+        url: '/about.html',
         templateUrl: 'scripts/about/about.html',
         controller: 'AboutCtrl'
       });
