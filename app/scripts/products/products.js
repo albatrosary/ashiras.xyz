@@ -5,7 +5,7 @@ angular.module('webapp')
   function ($stateProvider) {
     $stateProvider
       .state('products', {
-        url: '/products',
+        url: '/products.html',
         templateUrl: 'scripts/products/products.html',
         controller: 'ProductsCtrl'
       });
