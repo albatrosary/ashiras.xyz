@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('webapp', [
-    'ui.router'
+    'ui.router',
+    'pdf'
   ])
   .config(['$locationProvider', '$urlRouterProvider',
   function ($locationProvider, $urlRouterProvider) {

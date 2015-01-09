@@ -1,50 +1,9 @@
 <div class="container">
   <div class="marketing">
-    <div>
-      <h4>HTML / CSS3 / JavaScript</h4>
-      <p>HyperText Markup Language（ハイパーテキスト マークアップ ランゲージ）、略記・略称HTML（エイチティーエムエル）とは、ウェブ上の文書を記述するためのマークアップ言語である。文章の中に記述することでさまざまな機能を記述設定することができる。</p>
-      <p>ウェブの基幹的役割を持つ技術の一つでHTMLでマークアップされたドキュメントはほかのドキュメントへのハイパーリンクを設定できるハイパーテキストであり、画像・リスト・表などの高度な表現力を持つ。</p>
-      <p>現在は、WHATWG により仕様が作られ、それを元に W3C により勧告が行われるという流れになっている。W3C は、XML ベースの規格である XHTML の勧告も行っている。</p>
-      <hr>
-      <h4>YEOMAN</h4>
-      <p>Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive.</p>
-      <p>To do so, we provide a generator ecosystem. A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts.</p>
-      <p>Through our official Generators, we promote the "Yeoman workflow". This workflow is a robust and opinionated client-side stack, comprising tools and frameworks that can help developers quickly build beautiful web applications. We take care of providing everything needed to get started without any of the normal headaches associated with a manual setup.</p>
-      <p>With a modular architecture that can scale out of the box, we leverage the success and lessons learned from several open-source communities to ensure the stack developers use is as intelligent as possible.</p>
-      <p>As firm believers in good documentation and well thought out build processes, Yeoman includes support for linting, testing, minification and much more, so developers can focus on solutions rather than worrying about the little things.</p>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <h4>yeoman</h4>
-        <p>Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive.</p>
-        <p class="glyphicon glyphicon-link"><a href="http://yeoman.io/">yeoman.io</a></p>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <h4>slush</h4>
-        <p>Slush is a scaffolding tool, i.e. a tool to help you generate new project structures to get you up and running with your new project in a matter of seconds.</p>
-        <p class="glyphicon glyphicon-link"><a href="http://slushjs.github.io/">slushjs.github.io</a></p>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <h4>yo</h4>
-        <p>the scaffolding tool from Yeoman.</p>
-        <p class="glyphicon glyphicon-link"><a href="https://github.com/yeoman/yo">github.com/yeoman/yo</a></p>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <h4>bower</h4>
-        <p>Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.</p>
-        <p class="glyphicon glyphicon-link"><a href="http://bower.io/">bower.io</a></p>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <h4>grunt</h4>
-        <p>he Grunt ecosystem is huge and it's growing every day. With literally hundreds of plugins to choose from, you can use Grunt to automate just about anything with a minimum of effort. If someone hasn't already built what you need, authoring and publishing your own Grunt plugin to npm is a breeze.</p>
-        <p class="glyphicon glyphicon-link"><a href="http://gruntjs.com/">gruntjs.com</a></p>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <h4>gulp</h4>
-        <p>By preferring code over configuration, gulp keeps things simple and makes complex tasks manageable.</p>
-        <p class="glyphicon glyphicon-link"><a href="http://gulpjs.com/">gulpjs.com</a></p>
-      </div>
-    </div>
+<div class="wrapper">
+  <ng-pdf template-url="partials/viewer.html" canvasid="pdf" scale="1.2"></ng-pdf>
+</div>
+
+<script src="js/lib/pdf.js"></script>
   </div>
 </div>
