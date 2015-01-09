@@ -3,7 +3,7 @@
 angular.module('webapp')
   .controller('HeaderCtrl', ['$scope',
   function ($scope) {
-  	var MenuProperties = {'home':false, 'about':false, 'contact':false, 'charts':false, 'learning':false};
+  	var MenuProperties = {'home':false, 'about':false, 'contact':false, 'charts':false, 'learning':false, 'result':false};
   	$scope.menu = [];
 
   	for (var prop in MenuProperties) {
