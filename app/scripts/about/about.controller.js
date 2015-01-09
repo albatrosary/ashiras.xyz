@@ -3,9 +3,40 @@
 angular.module('webapp')
   .controller('AboutCtrl', ['$scope', function ($scope) {
 
+  var pdfs = [{
+  	pdf: 'pdf/mondai.pdf',
+  	title: '問題'
+  },{
+  	pdf: 'pdf/icih2.pdf',
+  	title: '１の漢字'
+  },{
+  	pdf: 'pdf/ni2.pdf',
+  	title: '２の漢字'
+  },{
+  	pdf: 'pdf/san.pdf',
+  	title: '３の漢字'
+  },{
+  	pdf: 'pdf/shi.pdf',
+  	title: '４の漢字'
+  }];
+
   $scope.pdfName = 'Relativity: The Special and General Theory by Albert Einstein';
-  $scope.pdfUrl = 'pdf/mondai.pdf';
   $scope.scroll = 0;
+  $scope.pdfUrl = 'pdf/mondai.pdf';
+  $scope.title = '問題';
+
+  var no = 0;
+
+  $scope.pre = function () {
+  	no = no - 1;
+    $scope.pdfUrl = pdfs[no].pdf;
+    $scope.title = pdfs[no].title;
+  };
+
+  $scope.next = function () {
+    $scope.pdfUrl = pdfs[no].pdf;
+    $scope.title = pdfs[no].title;
+  };
 
   $scope.getNavStyle = function(scroll) {
     if(scroll > 100) return 'pdf-controls fixed';
