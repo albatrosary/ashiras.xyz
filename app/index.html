@@ -19,15 +19,18 @@ html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent; }
 body {
-  margin: 0;}
+  margin: 0;
+  }
 body {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;}
+  background-color: #fff; }
+.container-back {
+  background-color: #2e35b2; }
 .mobile {
   display: none;}
 .desctop {
@@ -65,7 +68,6 @@ a:focus {
   padding-right: 15px;
 }
 .header {
-  border-bottom: 1px solid #e5e5e5;
   height: 80px;
   h3 {
     margin-top: 0;
@@ -147,8 +149,7 @@ float: right !important; }
   .header {
     height: 60px; }
   .informations {
-    border-bottom: 0;
-    margin-top: 30px; } }
+    border-bottom: 0; } }
 
 .informations {
   padding: 0px;
@@ -344,30 +345,32 @@ h6, .h6 {
 
 p {
   margin: 0 0 10px; }
-.text-muted {
-  color: #777777; }
+.text-muted-s {
+  color: #fff }
     </style>
   </head>
   <body ng-app="webapp">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-      <div class="header" ng-controller="HeaderCtrl">
-        <ul class="nav nav-pills pull-right desctop">
-          <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
-          <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
-          <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
-          <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
-          <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
-        </ul>
-        <ul class="nav nav-pills pull-right mobile">
-          <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
-          <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
-          <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
-          <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
-        </ul>
-        <h3 class="text-muted">Ashiras</h3>
+    <div class="container-back">
+      <div class="container">
+        <div class="header" ng-controller="HeaderCtrl">
+          <ul class="nav nav-pills pull-right desctop">
+            <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
+            <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
+            <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
+            <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
+            <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
+          </ul>
+          <ul class="nav nav-pills pull-right mobile">
+            <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
+            <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
+            <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
+            <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
+          </ul>
+          <h3 class="text-muted-s">Ashiras</h3>
+        </div>
       </div>
     </div>
 
