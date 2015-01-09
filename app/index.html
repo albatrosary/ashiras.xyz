@@ -28,6 +28,15 @@ body {
   line-height: 1.42857;
   color: #333333;
   background-color: #fff;}
+.mobile {
+  display: none;}
+.desctop {
+  display: block;}
+@media (max-width: 612px) {
+  .mobile {
+    display: block;}
+  .desctop {
+    display: none;} }
 a {
   background: transparent; }
 a:active,
@@ -345,9 +354,15 @@ p {
     <![endif]-->
     <div class="container">
       <div class="header" ng-controller="HeaderCtrl">
-        <ul class="nav nav-pills pull-right">
+        <ul class="nav nav-pills pull-right desctop">
           <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
           <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
+          <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
+          <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
+          <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
+        </ul>
+        <ul class="nav nav-pills pull-right mobile">
+          <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
           <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
           <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
           <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
