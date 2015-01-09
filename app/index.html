@@ -347,6 +347,7 @@ p {
       <div class="header" ng-controller="HeaderCtrl">
         <ul class="nav nav-pills pull-right">
           <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
+          <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
           <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
           <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
           <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
@@ -426,6 +427,8 @@ p {
 <script src="components/header/header.controller.js"></script>
 <script src="scripts/home/home.controller.js"></script>
 <script src="scripts/home/home.js"></script>
+<script src="scripts/products/products.controller.js"></script>
+<script src="scripts/products/products.js"></script>
 <script src="scripts/about/about.controller.js"></script>
 <script src="scripts/about/about.js"></script>
 <script src="scripts/contact/contact.controller.js"></script>
