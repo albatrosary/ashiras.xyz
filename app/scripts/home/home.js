@@ -6,7 +6,7 @@ angular.module('webapp')
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'scripts/home/home.html',
+        template: '',
         controller: 'HomeCtrl'
       });
   }]);
