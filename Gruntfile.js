@@ -244,6 +244,9 @@ module.exports = function (grunt) {
           '<%= config.dist %>/styles'
         ],
         blockReplacements: {
+          css: function (block) {
+            return '<link async defer rel="stylesheet" href="' + block.dest + '">';
+          },
           js: function (block){
             return '<script async defer src="' + block.dest + '"><\/script>';
           }
