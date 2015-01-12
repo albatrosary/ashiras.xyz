@@ -30,7 +30,7 @@ body {
   color: #333333;
   background-color: #fff; }
 .container-back {
-  background-color: #2e35b2; }
+  background-color: #fff; }
 .mobile {
   display: none;}
 .desctop {
@@ -46,10 +46,10 @@ a:active,
 a:hover {
   outline: 0; }
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none; }
 a:hover, a:focus {
-  color: #fff;
+  color: #000;
   text-decoration: underline; }
 a:focus {
   outline: thin dotted;
@@ -180,69 +180,69 @@ float: right !important; }
   .informations .h1 {
     font-size: 63px; } }
 
-.navs {
+.nav {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;}
-.navs:before, .navs:after {
+.nav:before, .nav:after {
   content: " ";
   display: table; }
-.navs:after {
+.nav:after {
   clear: both; }
-.navs > li {
+.nav > li {
   position: relative;
   display: block; }
-.navs > li > a {
+.nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px; }
-.navs > li > a:hover, .navs > li > a:focus {
+.nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none; }
-.navs > li.disabled > a {
+.nav > li.disabled > a {
   color: #777777; }
-.navs > li.disabled > a:hover, .navs > li.disabled > a:focus {
+.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
   color: #777777;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed; }
-.navs .open > a, .navs .open > a:hover, .navs .open > a:focus {
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
   border-color: #fff; }
-.navs .navs-divider {
+.nav .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #fff; }
-.navs > li > a > img {
+.nav > li > a > img {
   max-width: none; }
 
-.navs-tabs {
+.nav-tabs {
   border-bottom: 1px solid #ddd; }
-.navs-tabs > li {
+.nav-tabs > li {
   float: left;
   margin-bottom: -1px; }
-.navs-tabs > li > a {
+.nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0; }
-.navs-tabs > li > a:hover {
+.nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #ddd; }
-.navs-tabs > li.active > a, .navs-tabs > li.active > a:hover, .navs-tabs > li.active > a:focus {
-  color: #555555;
-  background-color: #fff;
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #000;
+  background-color: #000;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default; }
 
-.navs-pills > li {
+.nav-pills > li {
   float: left; }
-.navs-pills > li > a {
+.nav-pills > li > a {
   border-radius: 4px; }
-.navs-pills > li + li {
+.nav-pills > li + li {
   margin-left: 2px; }
-.navs-pills > li.active > a, .navs-pills > li.active > a:hover, .navs-pills > li.active > a:focus {
-  color: #fff;
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: #000;
   text-decoration: underline; }
 
 a {
@@ -344,8 +344,6 @@ h6, .h6 {
 
 p {
   margin: 0 0 10px; }
-.text-muted-s {
-  color: #fff }
     </style>
   </head>
   <body ng-app="webapp">
@@ -355,16 +353,16 @@ p {
     <div class="container-back">
       <div class="container">
         <div class="header" ng-controller="HeaderCtrl">
-          <h3 class="text-muted-s mobile">Ashiras <small class="pull-right mobile">Web Application Developer</small></h3>
+          <h3 class="text-muted mobile">Ashiras <small class="pull-right mobile">Web Application Developer</small></h3>
 
-          <ul class="navs navs-pills pull-right desctop">
+          <ul class="nav nav-pills pull-right desctop">
             <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
             <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
             <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
             <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
             <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
           </ul>
-          <ul class="navs navs-pills pull-right mobile">
+          <ul class="nav nav-pills pull-right mobile">
             <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
             <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
             <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
@@ -400,7 +398,7 @@ p {
             <p>The new $stateProvider works similar to Angular's v1 router, but it focuses purely on state.</p>
             <ul>
               <li>
-              A state corresponds to a "place" in the application in terms of the overall UI and navsigation.
+              A state corresponds to a "place" in the application in terms of the overall UI and navigation.
               </li>
               <li>
               A state describes (via the controller / template / view properties) what the UI looks like and does at that place.
