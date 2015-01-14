@@ -254,20 +254,24 @@ a {
   box-sizing: border-box;}
 @media screen and (min-width: 1024px) {
  .resp_image {
-    height: 474px;
-    background: url(images/main.1024.svg) top center no-repeat;}}
+    height: 792px;
+    background: url(images/201210032000.svg) top center no-repeat;
+    background-size: 1200px;}}
 @media (max-width: 1024px) and (min-width: 768px) {
  .resp_image {
-    height: 356px;
-    background: url(images/main.768.svg) top center no-repeat;}}
+    height: 675px;
+    background: url(images/201210032000.svg) top center no-repeat;
+    background-size: 1024px;}}
 @media (max-width: 768px) and (min-width: 512px) {
  .resp_image {
-    height: 237px;
-    background: url(images/main.512.svg) top center no-repeat;}}
+    height: 506px;
+    background: url(images/201210032000.svg) top center no-repeat;
+    background-size: 768px;}}
 @media (max-width: 512px) and (min-width: 256px) {
  .resp_image {
-    height: 237px;
-    background: url(images/main.512.svg) top center no-repeat;}}
+    height: 337px;
+    background: url(images/201210032000.svg) top center no-repeat;
+    background-size: 512px;}}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
@@ -358,15 +362,15 @@ p {
           <ul class="nav nav-pills pull-right desctop">
             <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
             <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
-            <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
+            <li><a href="http://albatrosary.hateblo.jp/">blog</a></li>
             <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
             <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
           </ul>
           <ul class="nav nav-pills pull-right mobile">
             <li ng-class="{active: menu['home']}"><a ui-sref="home" ng-click="onClick('home')">Home</a></li>
-            <li ng-class="{active: menu['about']}"><a ui-sref="about" ng-click="onClick('about')">About</a></li>
+            <li ng-class="{active: menu['products']}"><a ui-sref="products" ng-click="onClick('products')">Products</a></li>
+            <li><a href="http://albatrosary.hateblo.jp/">blog</a></li>
             <li ng-class="{active: menu['contact']}"><a ui-sref="contact" ng-click="onClick('contact')">Contact</a></li>
-            <li ng-class="{active: menu['charts']}"><a ui-sref="charts" ng-click="onClick('charts')">Charts</a></li>
           </ul>
           <h3 class="text-muted-s desctop">Ashiras<div><small>Web Application Developer</small></div></h3>
         </div>
