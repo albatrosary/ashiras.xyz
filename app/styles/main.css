@@ -162,8 +162,27 @@ body {
   }
 }
 
-body {
-  background-image: url("../images/backimage.png");
+
+body {  
+  background-image: url("../images/backimage_544.png");
   background-repeat: no-repeat;
   background-size: 100% auto; 
+}
+
+@media (min-width: 544px) {
+  body {  
+    background-image: url("../images/backimage_768.png")
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/backimage_992.png");
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url("../images/backimage.png");
+  }
 }
