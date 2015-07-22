@@ -8,7 +8,12 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
+small > a,
+small > a:focus,
+small > a:hover {
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: rgba(255,255,255,.5);
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
