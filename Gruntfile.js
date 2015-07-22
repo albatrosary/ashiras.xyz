@@ -37,6 +37,27 @@ module.exports = function (grunt) {
       },
       src: ['**']
     },
+    appcache: {
+      options: {
+        // Task-specific options go here.
+        basePath: '<%= config.dist %>'
+      },
+        // Target-specific file lists and/or options go here.
+      all: {
+        dest: '<%= config.dist %>/ashiras.appcache',
+        cache: {
+          patterns: [
+            '<%= config.dist %>/images/*.png',
+            '<%= config.dist %>/scripts/*.js',
+            '<%= config.dist %>/styles/*.css',
+            '<%= config.dist %>/*.html',
+            '<%= config.dist %>/*.ico',
+            '<%= config.dist %>/*.png'
+          ],
+        },
+        network: '*'
+      }
+    },
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -314,7 +335,8 @@ module.exports = function (grunt) {
             'images/{,*/}*.webp',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*',
-            'CNAME'
+            'CNAME',
+            'ashiras.appcache'
           ]
         }, {
           expand: true,
@@ -417,6 +439,7 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin',
+    'appcache',
     'gh-pages'
   ]);
 
