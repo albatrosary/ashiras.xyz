@@ -2,15 +2,14 @@
   "name": "ashiras-xyz",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~4.0.0-alpha"
   },
   "overrides": {
     "bootstrap": {
       "main": [
-        "less/bootstrap.less",
+        "scss/bootstrap.scss",
         "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js",
-        "dist/fonts/*"
+        "dist/js/bootstrap.js"
       ]
     }
   },
