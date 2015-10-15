@@ -1,1 +1,1 @@
-console.log('ashiras.xyz');
+console.log('ashiras.xyz.xyz');
