@@ -4,9 +4,7 @@ console.log('ashiras.xyz');
   // Check if a new cache is available on page load.
   console.log('Check if a new cache is available on page load.');
   window.addEventListener('load', function(e) {
-    console.log('load event ------------------');
     window.applicationCache.addEventListener('updateready', function(e) {
-    console.log('updateready ------------------');
       if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
         // Browser downloaded a new app cache.
         // Swap it in and reload the page to get the new hotness.
