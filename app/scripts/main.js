@@ -1,6 +1,5 @@
-console.log('ashiras.xyz');
-
 (function (){
+  console.log('ashiras.xyz');
   // Check if a new cache is available on page load.
   console.log('Check if a new cache is available on page load.');
   window.addEventListener('load', function(e) {
